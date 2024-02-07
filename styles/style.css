@@ -104,7 +104,7 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: self-start;
-  padding: 133px 30px;
+  padding: 0px 30px;
   gap: 30px;
 }
 .result {
@@ -379,6 +379,7 @@ fieldset {
 .more-button {
   width: 399px;
   height: 34px;
+  margin-bottom: 5px;
 }
 
 .preloader-template {
