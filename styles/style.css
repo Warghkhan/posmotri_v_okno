@@ -104,7 +104,7 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: self-start;
-  padding: 0px 30px;
+  padding: 275px 30px;
   gap: 30px;
 }
 .result {
