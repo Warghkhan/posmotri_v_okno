@@ -30,7 +30,6 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
-  
 }
 
 ul,
@@ -49,12 +48,10 @@ ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  /*display: none;*/
 }
 
 fieldset {
   border: none;
-  /*background-color: #545050;*/
 }
 
 .button {
@@ -71,10 +68,10 @@ fieldset {
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0%;
-  text-align: center;  
+  text-align: center;
 }
 
-.button:hover{
+.button:hover {
   text-decoration: underline;
   text-underline-offset: 1px;
 }
@@ -84,8 +81,7 @@ fieldset {
   text-decoration: none;
 }
 
-.button:focus{
-  
+.button:focus {
 }
 
 .title {
@@ -115,9 +111,7 @@ fieldset {
   align-items: flex-start;
   justify-content: space-between;
   margin-right: 30px;
-
   width: 711px;
-  /*gap: 14px;*/
 }
 
 .result__video-container {
@@ -138,33 +132,17 @@ fieldset {
   width: 711px;
   display: flex;
   margin-top: -5px;
-  /*
-  justify-content: space-between;
-  align-items: flex-end;
-  */
 }
 
 .search-form__fieldset {
   position: static;
   display: flex;
   flex-direction: column;
-  /*
-  justify-content: flex-start;
-  align-items: flex-end;
-  
-  padding: 0px;
-
-  width: 225px;
-*/
   flex: none;
   order: 0;
   flex-grow: 0;
 
   margin-right: 40px;
-
-
-
-
 }
 
 .search-form__fieldset-title {
@@ -192,7 +170,7 @@ fieldset {
   border-right: transparent;
   border-left: transparent;
   box-shadow: none;
-  width: 225px;  
+  width: 225px;
   background-color: transparent;
   overflow: hidden;
 }
@@ -207,15 +185,12 @@ fieldset {
   outline-offset: 1px;
 }
 
-
-
 .search-form__label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
-
 
 .search-form__checkbox-list {
   display: flex;
@@ -225,14 +200,7 @@ fieldset {
   gap: 15px;
 }
 
-/*
-input[type=checkbox] { 
-  
-}
-*/
-
 .search-form__pseudo-checkbox {
-  
   width: 15px;
   height: 15px;
   outline: 1px solid #fff;
@@ -241,21 +209,17 @@ input[type=checkbox] {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
-  
   outline: 1px solid #fff;
   outline-offset: 1px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
 :is(.search-form__label):has(.search-form__checkbox:focus) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-
-
 
 .search-form__pseudo-checkbox:active {
   background-color: #fff;
@@ -428,5 +392,4 @@ input[type=checkbox] {
   position: sticky;
   width: inherit;
   height: inherit;
- 
 }
