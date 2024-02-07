@@ -30,6 +30,7 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
+  
 }
 
 ul,
@@ -37,6 +38,55 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  /*display: none;*/
+}
+
+fieldset {
+  border: none;
+  /*background-color: #545050;*/
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;  
+}
+
+.button:hover{
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+
+.button:active {
+  background: #545050;
+  text-decoration: none;
+}
+
+.button:focus{
+  
+}
 
 .title {
   color: #fff;
@@ -49,17 +99,14 @@ ol {
   margin-bottom: 22px;
 }
 
-
 .content__accent {
   color: #545050;
 }
 
-
 .content {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  /*gap: 30px;*/
+  align-items: self-start;
   padding: 133px 30px;
 }
 .result {
@@ -70,34 +117,168 @@ ol {
   margin-right: 30px;
 
   width: 711px;
-  gap: 16px;
+  /*gap: 14px;*/
 }
 
 .result__video-container {
-   width: inherit;
-  
-   /*height: 386px;*/
+  margin: 78px 0px 20px 0px;
+
+  width: inherit;
+  overflow: hidden;
+  height: 386px;
 }
 
 .result__video {
-  width: inherit;
-  
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
   width: 711px;
   display: flex;
+  margin-top: -5px;
+  /*
   justify-content: space-between;
   align-items: flex-end;
+  */
+}
+
+.search-form__fieldset {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  /*
+  justify-content: flex-start;
+  align-items: flex-end;
+  
+  padding: 0px;
+
+  width: 225px;
+*/
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  margin-right: 40px;
+
+
+
+
+}
+
+.search-form__fieldset-title {
+  color: #fff;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.search-form__textfield {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: transparent;
+  border-left: transparent;
+  box-shadow: none;
+  width: 225px;  
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.search-form__textfield:active {
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+/*
+input[type=checkbox] { 
+  
+}
+*/
+
+.search-form__pseudo-checkbox {
+  
+  width: 15px;
+  height: 15px;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  margin: 2px 7px 0 2px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+:is(.search-form__label):has(.search-form__checkbox:focus) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+
+
+.search-form__pseudo-checkbox:active {
+  background-color: #fff;
+}
+.search-form__label-text:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.search-form__label-text {
+  margin-top: -3px;
+}
+
+.search-form__submit-button {
+  margin-top: 21px;
+  min-width: 194px;
+  max-height: 34px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-  
-  /*gap: 26px;*/
+
   position: static;
   width: 399px;
   height: 534px;
@@ -108,7 +289,6 @@ ol {
 
 .content__list {
   position: static;
-  /*width: 400px;*/
   max-height: 298px;
   display: flex;
   flex-direction: column;
@@ -121,7 +301,7 @@ ol {
   gap: 25px;
 
   margin-left: -2px;
-  
+
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -139,10 +319,10 @@ ol {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /*padding-top: 2px;*/
-  margin: 3px; 
-  padding: 2px 
-  
+
+  margin: 3px;
+  padding: 2px;
+  outline: none;
 }
 
 .content__card-link {
@@ -155,7 +335,6 @@ ol {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 6px;
-
 }
 
 .content__video-card-title {
@@ -170,20 +349,12 @@ ol {
   background-color: transparent;
 
   position: static;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: self-start;
-  /*
-  margin-bottom: 6px;
-  padding-top: 1px;
-  padding-left: 0;
-  */
-
 }
-
-
 
 .content__video-card-description {
   color: #fff;
@@ -193,30 +364,22 @@ ol {
   line-height: 16.2px;
   letter-spacing: 0%;
   text-align: left;
-/*
-  margin-top: 2px;
-  */
 }
 
 .content__video-card {
   position: static;
   width: 393px;
-  /*height: 107px;*/
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  /*padding: 2px;*/
+
   flex: none;
   order: 0;
   flex-grow: 0;
   overflow: hidden;
-  
-  /*margin-right: 5px;*/
-
-  
 }
-
 
 .content__video-card:active {
   background-color: #545050;
@@ -233,8 +396,6 @@ ol {
   border: 1px solid #fff;
 }
 
-
-
 .content__video-card-thumbnail {
   position: static;
   width: 194px;
@@ -242,14 +403,16 @@ ol {
   flex: none;
   order: 1;
   flex-grow: 0;
-
 }
 
 .content__video-card-description-container {
   color: #fff;
 }
 
-
+.more-button {
+  width: 399px;
+  height: 34px;
+}
 
 .preloader-template {
   position: static;
@@ -259,4 +422,11 @@ ol {
   order: 1;
   flex-grow: 0;
   margin: 0px 0px;
+}
+
+.preloader {
+  position: sticky;
+  width: inherit;
+  height: inherit;
+ 
 }
