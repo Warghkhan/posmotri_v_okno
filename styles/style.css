@@ -82,6 +82,8 @@ fieldset {
 }
 
 .button:focus {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .title {
@@ -104,6 +106,7 @@ fieldset {
   justify-content: center;
   align-items: self-start;
   padding: 133px 30px;
+  gap: 30px;
 }
 .result {
   display: flex;
@@ -112,14 +115,25 @@ fieldset {
   justify-content: space-between;
   margin-right: 30px;
   width: 711px;
+  margin: 78px 0px 20px 0px;
 }
 
 .result__video-container {
-  margin: 78px 0px 20px 0px;
-
+  position: relative;
   width: inherit;
   overflow: hidden;
   height: 386px;
+}
+
+.preloader {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #545050;
 }
 
 .result__video {
@@ -131,7 +145,7 @@ fieldset {
 .search-form {
   width: 711px;
   display: flex;
-  margin-top: -5px;
+  margin-top: 15px;
 }
 
 .search-form__fieldset {
@@ -228,6 +242,7 @@ fieldset {
   border-bottom: 1px solid #fff;
 }
 
+
 .search-form__label-text {
   margin-top: -3px;
 }
@@ -252,7 +267,7 @@ fieldset {
 }
 
 .content__list {
-  position: static;
+  position: relative;
   max-height: 298px;
   display: flex;
   flex-direction: column;
@@ -388,8 +403,4 @@ fieldset {
   margin: 0px 0px;
 }
 
-.preloader {
-  position: sticky;
-  width: inherit;
-  height: inherit;
-}
+
