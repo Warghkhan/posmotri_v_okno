@@ -46,6 +46,7 @@ ol {
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 
@@ -58,22 +59,27 @@ ol {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 30px;
+  /*gap: 30px;*/
   padding: 133px 30px;
 }
 .result {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  /*gap: 16px;*/
 }
 
 .result__video-container {
+  padding-top: 5px;
   width: 711px;
+  
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .result__video {
   width: inherit;
+  
 }
 
 .search-form {
@@ -87,7 +93,9 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 26px;
+  
+  
+  /*gap: 26px;*/
   position: static;
   width: 399px;
   height: 534px;
@@ -98,8 +106,8 @@ ol {
 
 .content__list {
   position: static;
-  width: 399px;
-  height: 298px;
+  /*width: 400px;*/
+  max-height: 298px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -110,6 +118,8 @@ ol {
   flex-grow: 0;
   gap: 30px;
 
+  margin-left: -2px;
+  
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -127,13 +137,61 @@ ol {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0px;
+  /*padding-top: 2px;*/
+  margin: 3px; 
+  padding: 2px 
+  
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__video-card-description-container {
+  margin: 0;
+  /*padding-top: 3px;*/
+  
+}
+
+.content__video-card-title {
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  position: static;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+  /*margin-top: -10px;*/
+  margin-bottom: 6px;
+  padding-top: 1px;
+  /*margin-left: 2px;*/
+  padding-left: 0;
+
+}
+
+.content__video-card-description {
+  color: #fff;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .content__video-card {
   position: static;
-  width: 394px;
-  height: 107px;
+  width: 393px;
+  /*height: 107px;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -142,14 +200,13 @@ ol {
   flex: none;
   order: 0;
   flex-grow: 0;
+  overflow: hidden;
+  
   /*margin-right: 5px;*/
 
   
 }
 
-.content__video-card-title {
-  margin: 6px 0px;
-}
 
 .content__video-card:active {
   background-color: #545050;
@@ -163,6 +220,20 @@ ol {
   border: 1px solid #fff;
 }
 
+/*
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:hover {
+  
+}
+
+.content__list-item:focus {
+  border: 1px solid #fff;
+}
+*/
+
 .content__video-card-thumbnail {
   position: static;
   width: 194px;
@@ -170,7 +241,8 @@ ol {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 0px 0px;
+  /*margin-top: -2px;*/
+  
   /*border: 0.1px dashed #fff;*/
 }
 
