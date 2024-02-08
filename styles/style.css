@@ -38,7 +38,7 @@ ol {
 }
 
 input {
-  appearance: none; 
+  appearance: none;
 }
 
 .visually-hidden {
@@ -67,7 +67,6 @@ video:focus {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-
 
 .button {
   -webkit-appearance: none;
@@ -98,7 +97,6 @@ video:focus {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-
 
 .title {
   color: #fff;
@@ -257,7 +255,7 @@ video:focus {
 .search-form__pseudo-checkbox:active {
   background-color: #fff;
 }
-.search-form__label:hover .search-form__label-text{
+.search-form__label:hover .search-form__label-text {
   border-bottom: 1px solid #fff;
 }
 
@@ -330,8 +328,6 @@ video:focus {
 .content__card-link {
   text-decoration: none;
 }
-
-
 
 .content__video-card-description-container {
   display: flex;
